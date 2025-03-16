@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Set<ListItem> = Set()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TableViewWrapper(items: items, rowHeight: 30, selectedItems: $selection) { item in
+            Text(item.name)
         }
-        .padding()
     }
 }
 

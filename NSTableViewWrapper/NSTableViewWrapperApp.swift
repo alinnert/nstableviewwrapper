@@ -13,5 +13,6 @@ struct NSTableViewWrapperApp: App {
         WindowGroup {
             ContentView()
         }
+        .defaultSize(width: 300, height: 300)
     }
 }
