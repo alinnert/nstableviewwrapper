@@ -37,3 +37,7 @@ I plan to make TableViewWrapper generic in the future.
 ### Display problems on first render
 
 The currently biggest issue: On first render the first few items are displayed incorrectly. As soon as those items go out of the visible area and enter it again the issue is magically gone. I'm still trying to figure out what causes this.
+
+![](screenshot.png)
+
+**Explanation:** The lower elements are showing up correctly. The upper elements are pushed slightly up and to the left until the re-enter the visible area through scrolling.
